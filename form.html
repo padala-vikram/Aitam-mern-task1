@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpirt" content="width=device-width,initial-scaled=1.0">
+        <title>Login page</title>
+    </head>
+    <body>
+        <h1>LOGIN FORM</h1>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend><br>
+            <label for="name">First Name:</label>
+            <input type="text" name="name" placeholder="Enter your first name">
+            <br><br>
+            <label for="name">Last Name:</label>
+            <input type="text" name="name" placeholder="Enter your last name">
+            <br><br>
+            <label for="name">Email:</label>
+            <input type="email" name="name" placeholder="Enter your email">
+            <br><br>
+            <label for="name">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male"> Male
+            <input type="radio" id="female" name="gender" value="male"> Female
+            <input type="radio" id="others" name="gender" value="male"> Others
+            <br><br>
+            <label type="name">Address:</label>
+            <input type="text" name="name" placeholder="Enter your Address">
+            <br><br>
+            <input type="button" value="Submit">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Educational Information</legend><br>
+
+            <label for="name">Degree:</label>
+            <input type="text" name="name" placeholder="Enter your Degree">
+            <br><br>
+            <label for="name">Insitute::</label>
+            <input type="text" name="name" placeholder="Enter your Insitute">
+            <br><br>
+            </fieldset><br><br>
+            <textarea name="" ud="" placeholder="enetr your feedback..." rows="4" cols="20"></textarea>
+            <input type="button" value="submit">
+            <button>click here to submit</button><br><br>
+            <fieldset>
+                <legend>Top Countries</legend>
+            <select name="country">
+                <option value="us">US</option>
+                <option value="uk">UK</option>
+                <option value="india">INDIA</option>
+                <option value="canada">CANADA</option>
+                <option value="australia">AUSTRALIA</option>
+            </select><br><br>
+        </fieldset><br>
+            <fieldset>
+                <legend> Restaurant Menu</legend>
+            <select name="restaraunt">
+                <optgroup label="Veg">
+                    <option value="dosa">Dosa</option>
+                    <option value="idly">Idly</option>
+                    <option value="pulihora">Pulihora</option>
+                    <option value="puri">Puri</option>
+                </optgroup>
+                <optgroup label="Non veg">
+                    <option value="chicken">Chicken</option>
+                    <option value="prawns">Prawns</option>
+                    <option value="fish">Fish</option>
+                    <option value="meat">Meat</option>
+                </optgroup> 
+            </select>
+        </fieldset><br><br>
+        <input type="text" list="browers" name="browser" placeholder="enter your fav browser name.."/>
+        <datalist id="favorite browers">
+            <option value="chorme">Chorme</option>
+            <option value="safari">Safari</option>
+            <option value="brave">Brave</option>
+            <option value="edge">Edge</option>
+            <option value="firefox">Firefox</option>
+        </datalist>
+        </form>
+    </body>
+</html>
