@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+</head>
+<body>
+    <h1>Event Registration Form</h1>
+    <form action="/submit_registration" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required><br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Preferences</legend>
+            <label for="participantType">Are you a:</label><br>
+            <input type="radio" id="dayScholar" name="participantType" value="dayScholar" required>
+            <label for="dayScholar">Day Scholar</label><br>
+            <input type="radio" id="hosteller" name="participantType" value="hosteller">
+            <label for="hosteller">Hosteller</label><br><br>
+            <label for="events">Select Event Type:</label><br>
+            <input type="checkbox" id="workshop" name="events" value="workshop">
+            <label for="workshop">Workshop</label><br>
+            <input type="checkbox" id="seminar" name="events" value="seminar">
+            <label for="seminar">Seminar</label><br>
+            <input type="checkbox" id="competition" name="events" value="competition">
+            <label for="competition">Competition</label><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Pass Collection</legend>
+            <label for="uploadPass">Upload Your ID for Pass Collection:</label>
+            <input type="file" id="uploadPass" name="uploadPass" accept="image/*,.pdf" required><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>Feedback</legend>
+            <label for="feedback">Any Suggestions or Feedback:</label><br>
+            <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Share your thoughts here..."></textarea><br><br>
+        </fieldset>
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
