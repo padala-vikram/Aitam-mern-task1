@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpirt" content="width=device-width,initial-scaled=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            #heading{
+            color: rgb(5, 5, 5);
+            font-style: italic;
+            text-align: center;
+            text-transform: uppercase;
+            font-size:x-large;
+            font-weight:bold;
+         }
+         h1{
+            color: rgb(255, 0, 0);
+            font-style: italic;
+            text-transform: uppercase;
+            text-align: center;
+         }
+        p{
+            color: rgba(210, 0, 0, 0.819);
+            font-style: italic;
+            text-transform: uppercase;
+            text-align: center;
+         } 
+         div p{
+        color: rgb(203, 33, 200);
+        font-size: 20px;
+      }
+      h1 ~ hover{
+        color:rgb(76, 9, 246)
+      }
+      button{
+        padding:7px 35px;
+        background-color: rgb(167, 239, 237);
+        border:1px solid black;
+        border-radius: 12px;
+        color: black;
+        margin-left: 320px;
+      }
+      button:hover{
+        background-color: rgb(12, 248, 0);
+        font-style: italic;
+        font-size: 15px;
+        border-radius: 90px;
+        border:2px solid black;
+      }
+      p~a{
+        margin-left: 280px;
+      }
+      a:hover{
+        color: red;
+      }
+
+      a:active{
+        color: yellow;
+      }
+      li:nth-child(2),li:nth-child(3)
+       {
+        color: rgb(238, 8, 8);
+       }
+       h2{
+        font-family: sans-serif;
+        font-size: 40px;
+        font-weight: lighter;
+        color:blue;
+        text-align: center;
+        text-decoration: underline dotted ;
+        text-transform: capitalize;
+        letter-spacing: 3px;
+        line-height: 50px;
+        word-spacing: 15px;
+       }
+
+      </style>
+    </head>
+    <body>
+        <!--general selector-->
+        <h1 id="heading1">Welcome to My Website</h1>
+    <div>
+        <p class="heading1">this is also demo</p>
+    
+    </div>
+    <p>this is also more </p>
+    <!--general sibiling selector-->
+    <h1 id="heading1">Welcome to My Website</h1>
+    <div>
+        <p class="heading1">this is also demo</p>
+        <div> 
+            <p>this is demo 2</p>
+        </div>
+    </div>
+    <p>this is also more </p>
+    <!-- this is adjacent selector -->
+    <h1>heading</h1>
+    <p>para 1</p>
+    <p>para 2</p>
+    <p>para 3</p>
+<!--pseudo class-->
+    <h1> form </h1>
+    <button>submit</button>
+
+    <p>this para contains a link
+    <a href="https://youtube.com/">click on the link</a>
+    the para get background yellow when click on the link</p>
+<!--Attribute selector-->
+<ul>
+    <li>part 1</li>
+    <li>part 2</li>
+    <li>part 3</li>
+    <li>part 4</li>
+    <li>part 5</li>
+    <li>part 6</li>
+</ul>
+<h2> This is demo text for css</h2>
+</body>
+</html>
