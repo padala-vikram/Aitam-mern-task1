@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="3768941-hd_1920_1080_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Arabian Delight</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Arabian Delight</h1>
+            <p>Experience the finest dining with a touch of elegance and flavor.</p>
+            <a href="#menu" class="btn">View Menu</a>
+        </div>
+    </section>
+    <section id="menu">
+        <div class="menu-container">
+            <h2>Our Menu</h2>
+            <label for="menu-category">Select a category:</label>
+            <select id="menu-category">
+                <option value="starters">Starters</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="non-vegetarian">Non-Vegetarian</option>
+                <option value="desserts">Desserts</option>
+                <option value="beverages">Beverages</option>
+            </select>
+
+            <div id="menu-items">
+                <div class="menu-category" id="starters">
+                    <h3>Starters</h3>
+                    <table>
+                        <tr>
+                            <th>Dish</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Tomato Basil Soup</td>
+                            <td>$5</td>
+                        </tr>
+                        <tr>
+                            <td>Veg Spring Rolls</td>
+                            <td>$6</td>
+                        </tr>
+                        <tr>
+                            <td>Chicken Tikka</td>
+                            <td>$8</td>
+                        </tr>
+                        <tr>
+                            <td>Paneer Tikka</td>
+                            <td>$7</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menu-category" id="vegetarian">
+                    <h3>Vegetarian</h3>
+                    <table>
+                        <tr>
+                            <th>Dish</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Paneer Butter Masala</td>
+                            <td>$10</td>
+                        </tr>
+                        <tr>
+                            <td>Vegetable Biryani</td>
+                            <td>$12</td>
+                        </tr>
+                        <tr>
+                            <td>Malai Kofta</td>
+                            <td>$11</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menu-category" id="non-vegetarian">
+                    <h3>Non-Vegetarian</h3>
+                    <table>
+                        <tr>
+                            <th>Dish</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Butter Chicken</td>
+                            <td>$15</td>
+                        </tr>
+                        <tr>
+                            <td>Mutton Rogan Josh</td>
+                            <td>$18</td>
+                        </tr>
+                        <tr>
+                            <td>Chicken Biryani</td>
+                            <td>$14</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menu-category" id="desserts">
+                    <h3>Desserts</h3>
+                    <table>
+                        <tr>
+                            <th>Dish</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Chocolate Lava Cake</td>
+                            <td>$6</td>
+                        </tr>
+                        <tr>
+                            <td>Gulab Jamun</td>
+                            <td>$5</td>
+                        </tr>
+                        <tr>
+                            <td>Cheesecake</td>
+                            <td>$7</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="menu-category" id="beverages">
+                    <h3>Beverages</h3>
+                    <table>
+                        <tr>
+                            <th>Dish</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Fresh Lime Soda</td>
+                            <td>$3</td>
+                        </tr>
+                        <tr>
+                            <td>Mojito</td>
+                            <td>$5</td>
+                        </tr>
+                        <tr>
+                            <td>Masala Chai</td>
+                            <td>$2</td>
+                        </tr>
+                        <tr>
+                            <td>Cappuccino</td>
+                            <td>$4</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Arabian Delight. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
