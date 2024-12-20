@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0px;
+    text-align: center;
+  }
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+  .popular-destinations {
+    text-align: center;
+    margin-top: 50px;
+    padding: 10px;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .card h3 {
+    margin: 10px 0;
+  }
+
+  .card p {
+    padding: 0 15px;
+    color: #555;
+  }
+
+  .card button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 15px 0;
+  }
+
+  .card button:hover {
+    background-color: #0056b3;
+  }
+
+  .testimonials {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .testimonials h2 {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 97vw;
+    height: 20vh;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+  }
+
+.header-description {
+  font-size: 16px;
+  color: #e0e0e0;
+  font-style: italic;
+  margin-top: 5px;
+  text-align: center;
+}
+.testimonial-container {
+  display: flex;
+  justify-content: center; 
+  align-items: flex-start;
+  gap: 20px; 
+  flex-wrap: nowrap; 
+  overflow-x: auto; 
+}
+
+.testimonial {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 300px; 
+  padding: 20px;
+  text-align: center;
+  margin: 10px 0; 
+}
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.testimonial p {
+    font-style: italic;
+    color: #555;
+  }
+
+  .testimonial span {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+  }
+
+  footer {
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+</style>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Mountain Travel</div>
+      <ul class="nav-links">
+        <li><a href="#landing">Home</a></li>
+        <li><a href="#locations">Popular Destinations</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#footer">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="popular-destinations">
+    <h2>Popular Destinations</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="https://t3.ftcdn.net/jpg/05/70/01/58/360_F_570015898_r4ygtxmZ1B2JoX67ypd1o36ffSRbTCiz.jpg" alt="Mount Everest">
+        <h3>Mount Everest</h3>
+        <p>Experience the beauty of the world's tallest mountain.</p>
+        <button>Book Now</button>
+      </div>
+      <div class="card">
+        <img src="https://images.fineartamerica.com/images-medium-large-5/a-forest-walk-jan-paul-kraaij.jpg" alt="Rocky Mountains">
+        <h3>Forest</h3>
+        <p>Enjoy breathtaking views and diverse wildlife.</p>
+        <button>Book Now</button>
+      </div>
+      <div class="card">
+        <img src="https://images.fineartamerica.com/images-medium-large-5/1-the-bridge-jacek-oleksinski.jpg" alt="Swiss Alps">
+        <h3>Sea</h3>
+        <p>The ocean's roar is music to the soul.</p>
+        <button>Book Now</button>
+      </div>
+      <div class="card">
+        <img src="https://www.usnews.com/object/image/00000163-8d5b-d398-ad7f-8dfff5760000/3-eiffel-tower-getty.jpg?update-time=1527086483519&size=responsive640" alt="Andes Mountains">
+        <h3>Paris</h3>
+        <p>Discover the rich culture and history of Paris.</p>
+        <button>Book Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2>What Our Travelers Say
+      <p> <p class="header-description">"Traveling opens up your mind, broadens your perspective, and creates unforgettable memories. Let us guide you to the best destinations!"</p></p>
+    </h2>
+    <div class="testimonial">
+      <img src="my pass photo.jpg" alt="Traveler" class="testimonial-img">
+      <span>Padala Vikram</span>
+      <p>"My trip to Mount Everest was breathtaking! A truly unforgettable experience."</p>
+      
+    </div>
+    <div class="testimonial">
+      <img src="my pass photo.jpg" alt="Traveler" class="testimonial-img">
+      <span>Padala Vikram</span>
+      <p>"Exploring the serene forest was magical. I loved every moment of it!"</p>
+    </div>
+    <div class="testimonial">
+      <img src="my pass photo.jpg" alt="Traveler" class="testimonial-img">
+      <span>Padala Vikram</span>
+      <p>"The sea views were spectacular. A perfect escape from the city hustle."</p>
+    </div>
+    <div class="testimonial">
+      <img src="my pass photo.jpg" alt="Traveler" class="testimonial-img">
+      <span>Padala Vikram</span>
+      <p>"Paris was a dream come true! Its charm and beauty exceeded my expectations."</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Popular Destinations. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

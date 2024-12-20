@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mountain Travel Website Landing Page</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+#landing {
+  background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  opacity: 0.7;
+}
+#landing h1 {
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+  padding-top: 250px;
+}
+#landing p {
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  padding-top: 20px;
+  font-style: italic;
+}
+button {
+  padding: 8px 40px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 20px;
+  margin-left: 40%;
+  border-radius: 10px;
+}
+
+#locations {
+  padding: 20px;
+  text-align: center;
+}
+
+#locations h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  padding: 0 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.card-btn {
+  margin: 10px 0;
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-btn:hover {
+  background: #0056b3;
+}
+
+#testimonials {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+.testimonial-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+.testimonial-header h1{
+    font-size: 3rem;
+    text-align: center;
+}
+.testimonial-header p{
+    font-size: 1.3rem;
+   
+    margin-top: 10px;
+}
+
+.testimonial-cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.testimonial-card{
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;  
+    text-align: center;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.testimonial-card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.testimonial-card h3{
+    margin: 10px 0;
+}
+.testimonial-text{
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+    font-style: italic;
+    padding: 0px 10px;
+}
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 25px;
+  margin-top: 20px;
+}
+.footer-info h4 {
+  margin: 0 0 15px;
+}
+.footer-info p {
+  font-size: 1rem;
+  color: #ccc;
+} 
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Mountain Travel</div>
+        <ul class="nav-links">
+          <li><a href="#landing">Home</a></li>
+          <li><a href="#locations">Popular Destinations</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- landing page start -->
+    <section id="landing">
+      <h1>Explore the Mighty Mountains</h1>
+      <p>Plan your next adventure with our curated mountain destinations</p>
+      <button>Learn More..</button>
+    </section>
+    <!-- landing page ends -->
+    <hr />
+
+    <!-- location card page starts here -->
+    <section id="locations">
+      <h2>Popular Destinations</h2>
+      <div class="cards-container">
+        <!-- Card 1 -->
+        <div class="card">
+          <img src="./images/card image.jpeg" alt="Mount Everest" />
+          <h3>Mount Everest</h3>
+          <p>Experience the beauty of the world's tallest mountain.</p>
+          <a href="./form.html"><button class="card-btn">Book Now</button></a>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+          <img src="./images/card image.jpeg" alt="Rocky Mountains" />
+          <h3>Rocky Mountains</h3>
+          <p>Enjoy breathtaking views and diverse wildlife.</p>
+          <a href="./form.html"><button class="card-btn">Book Now</button></a>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+          <img src="./images/card image.jpeg" alt="Swiss Alps" />
+          <h3>Swiss Alps</h3>
+          <p>Marvel at the snowy peaks and charming villages.</p>
+          <a href="./form.html"><button class="card-btn">Book Now</button></a>
+        </div>
+        <!-- card 4   -->
+        <div class="card">
+          <img src="./images/card image.jpeg" alt="Andes Mountains" />
+          <h3>Andes Mountains</h3>
+          <p>Discover the rich culture and history of South America.</p>
+          <a href="./form.html"><button class="card-btn">Book Now</button></a>
+        </div>
+      </div>
+    </section>
+    <!-- location card page ends here -->
+     <hr>
+    <!-- testimonial section starts here -->
+
+
+<section id="testimonials">
+    <header class="testimonial-header">
+        <h1>What Our Travelers Say</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos cum similique, corrupti alias veritatis ullam quisquam sint mollitia non expedita amet placeat maiores ab quidem deleniti sit rem adipisci porro.</p>
+    </header>
+
+    <div class="testimonial-cards">
+        <div class="testimonial-card">
+            <img src="./images/photo.jpg" alt="user">
+            <h3>AITAM</h3>
+            <p class="testimonial-text">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates."
+            </p>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="./images/photo.jpg" alt="user">
+            <h3>AITAM</h3>
+            <p class="testimonial-text">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates."
+            </p>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="./images/photo.jpg" alt="user">
+            <h3>AITAM</h3>
+            <p class="testimonial-text">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates."
+            </p>
+        </div>
+
+        <div class="testimonial-card">
+            <img src="./images/photo.jpg" alt="user">
+            <h3>AITAM</h3>
+            <p class="testimonial-text">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates."
+            </p>
+        </div>
+    </div>
+</section>
+    <footer>
+        <div class="footer-info">
+            <h4>About Mountain Travel</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga neque a ad vitae perspiciatis veniam nisi ullam, soluta quibusdam enim cupiditate aspernatur maxime culpa excepturi! Modi numquam atque porro cum.</p>
+        </div>
+        <p>&copy; 2024 copyright . all right reserved to AITAM Training</p>
+    </footer>
+  </body>
+</html>

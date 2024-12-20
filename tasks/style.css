@@ -1,34 +1,5 @@
-.landing h1{
-   text-align:center;
-   font-size: 30px;
-   color: black;
-   padding-top: 100px;
-   margin: 0;
-}
-.landing p{
-   text-align:center;
-   font-size: 25px;
-   color: black;
-   padding-top: 0;
-   margin: 0;
-}
-.button{
-   text-align: center;
-   font-size: 15px;
-   color:black;
-   padding-top: 0;
-   margin-left: 790px;
-   
-}
-.landing{
-   background: url("travel.jpg");
-   background-size: cover;
-   background-position: center;
-   height: 90vh;
 
-}
-
-* {
+*{
    margin: 0;
    padding: 0;
    box-sizing: border-box;
@@ -126,7 +97,7 @@ header {
 }
 
 .btn:hover {
-   background: #ff9800;
+   background: #f99602;
    color: white;
    
 }
@@ -165,7 +136,7 @@ footer {
 .menu-category h3 {
    font-size: 24px;
    margin-bottom: 15px;
-   color: #ff9800;
+   color: #0f0e0e;
    text-transform: uppercase;
    font-weight: 700;
 }
@@ -195,7 +166,7 @@ table th, table td {
 }
 
 table th {
-   background-color: #ff9800;
+   background-color: #0f0f0f;
    color: white;
    font-weight: 700;
 }

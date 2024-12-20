@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern CSS Website</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo">
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20231228172727/gfg-image.jpg" alt="Logo">
+        <span>GeeksforGeeks</span>
+      </div>
+      <nav>
+        <a href="#">Courses</a>
+        <a href="#">Assignments</a>
+        <a href="#">Practice</a>
+        <a href="#">Contests</a>
+      </nav>
+      <div class="theme-switcher">
+        <button id="theme-toggle" title="Toggle theme">🌙</button>
+        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="github-icon">
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>GeeksforGeeks Courses<br>Interactive LIVE & Self-Paced Courses.</h1>
+      <p class="subtext">GeeksforGeeks (GFG) is a premier online platform offering a vast repository of computer science and programming resources.</p>
+      <div class="hero-buttons">
+        <button class="get-started">Get started</button>
+        <div class="search-box">
+          <input type="text" placeholder="Quick search..." />
+          <span class="shortcut">Ctrl K</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const themeToggleButton = document.getElementById('theme-toggle');
+
+    const switchTheme = (theme) => {
+      if (theme === 'light') {
+        document.body.classList.remove('dark-theme');
+        document.body.classList.add('light-theme');
+        localStorage.setItem('theme', 'light');
+      } else if (theme === 'dark') {
+        document.body.classList.remove('light-theme');
+        document.body.classList.add('dark-theme');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (prefersDarkScheme) {
+          document.body.classList.add('dark-theme');
+          document.body.classList.remove('light-theme');
+        } else {
+          document.body.classList.add('light-theme');
+          document.body.classList.remove('dark-theme');
+        }
+      }
+    };
+    const savedTheme = localStorage.getItem('theme');
+    switchTheme(savedTheme || 'system');
+    themeToggleButton.addEventListener('click', () => {
+      const currentTheme = localStorage.getItem('theme');
+      if (currentTheme === 'light') {
+        switchTheme('dark');
+      } else {
+        switchTheme('light');
+      }
+    });
+  </script>
+</body>
+</html>
